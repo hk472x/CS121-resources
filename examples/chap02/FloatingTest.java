@@ -12,7 +12,7 @@ public class FloatingTest
 		double value2 = (double) n / 3600;
 		System.out.println(" x = " + value1 + "\n y = " + value2);
 		System.out.println();
-		
+
 		double value = 2.0;
 		value = Math.sqrt(value);
 		System.out.println("sqrt(2) = " + value);
@@ -27,7 +27,7 @@ public class FloatingTest
 		System.out.println();
 
 		value =  1;
-		value = value/3; 
+		value = value/3;
 		value = value/3;
 		System.out.println("1/3.0/3.0  = " + value);
 		value =  value * 9 ;

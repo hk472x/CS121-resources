@@ -9,21 +9,21 @@ public class TestInt
 		int i = 0;
 
 		final int INCREMENT = 1000;
-		for (;;) {
+		for(;;) {
 			i += INCREMENT;
 			System.out.print(i);
 			System.out.print("\r");
-			if (i < 0) {
+			if(i < 0) {
 				System.out.println("i has wrapped around!" + i);
 				break;
 			}
 		}
 
-		for (;;) {
+		for(;;) {
 			i += INCREMENT;
 			System.out.print(i);
 			System.out.print("\r");
-			if (i > 0) {
+			if(i > 0) {
 				System.out.println("i is back to positive!" + i);
 				break;
 			}

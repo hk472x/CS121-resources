@@ -11,9 +11,9 @@ public class BlankOrDark
    	/**
    	 *  Prints a poem on multiple lines.
    	 */
-   	public static void main (String[] args)
+   	public static void main(String[] args)
    	{
-		System.out.print ("\n\t blank or dark\n\n"+
+		System.out.print("\n\t blank or dark\n\n"+
 						  	"\t blank\n"+
 						  	"\t blank\n"+
 						  	"\t so blank\n"+

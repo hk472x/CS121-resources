@@ -1,12 +1,12 @@
 /**
  * Demonstrates the effects of a carriage return control character.
  * Must run from command-line to see effect.
- * 
+ *
  * @author amit
  */
 public class CarriageReturnDemo
 {
-	public static void main (String[] args) 
+	public static void main(String[] args)
 	throws InterruptedException
 	{
 		System.out.println();
