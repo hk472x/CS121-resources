@@ -10,11 +10,11 @@ public class CircleStatsFormatter
    	/**
 	 * Calculates the area and circumference of a circle given its radius.
 	 */
-   	public static void main (String[] args)
+   	public static void main(String[] args)
    	{
 		Scanner scan = new Scanner(System.in);
 
-		System.out.print ("Enter the circle's radius: ");
+		System.out.print("Enter the circle's radius: ");
 		int radius = scan.nextInt();
 
 		double area = Math.PI * Math.pow(radius, 2);
@@ -23,8 +23,8 @@ public class CircleStatsFormatter
 		// Round the output to three decimal places
 		Formatter fmt = new Formatter(System.out);
 
-		System.out.println ("The circle's area: " + area);
-		System.out.println ("The circle's circumference: " + circumference);
+		System.out.println("The circle's area: " + area);
+		System.out.println("The circle's circumference: " + circumference);
 
 		System.out.println( "\nUsing printf\n");
 		System.out.printf( "The circle's area:          %7.3f\n", area);

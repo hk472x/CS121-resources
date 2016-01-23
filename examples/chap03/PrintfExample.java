@@ -6,7 +6,7 @@
  */
 public class PrintfExample
 {
-	public static void main (String[] args)
+	public static void main(String[] args)
 	{
 		int num1 = 1200;
 		long num2 = 1234567890123L; //L as a suffix forces the number to be 64-bit long
@@ -38,7 +38,7 @@ public class PrintfExample
 		// Use - to left justify the string in a fixed width field
 		System.out.printf("%-20s \n", str1);
 
-		// Run-time errors (Exceptions) can be thrown when the format string causes 
+		// Run-time errors (Exceptions) can be thrown when the format string causes
 		// an unsupported conversion. Uncomment the line below to try it out.
 		System.out.printf(" num3 = %d \n", num3);
 	}

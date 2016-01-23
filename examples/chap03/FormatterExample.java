@@ -7,7 +7,7 @@ import java.util.Formatter;
  */
 public class FormatterExample
 {
-   	public static void main (String[] args)
+   	public static void main(String[] args)
    	{
 		int num1 = 1200;
 	  	long num2 = 1234567890123L; //L as a suffix forces the number to be 64-bit long

@@ -7,11 +7,11 @@ import java.util.Scanner;
  */
 public class TrigDemo
 {
-	public static void main (String[] args)
+	public static void main(String[] args)
 	{
 		double x, y, z;
 
-		Scanner scan = new Scanner (System.in);
+		Scanner scan = new Scanner(System.in);
 
 		System.out.println(" degrees \t radians");
 		System.out.println(" 0 \t " + Math.toRadians(0));
@@ -21,7 +21,7 @@ public class TrigDemo
 		System.out.println(" 270 \t " + Math.toRadians(270));
 		System.out.println(" 360 \t " + Math.toRadians(360));
 
-		System.out.print ("\nEnter the angle (in degrees): ");
+		System.out.print("\nEnter the angle (in degrees): ");
 		x = scan.nextInt();
 		System.out.println();
 
