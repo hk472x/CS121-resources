@@ -1,5 +1,3 @@
-
-
 import java.awt.*;
 
 import javax.swing.JFrame;
@@ -9,35 +7,37 @@ import javax.swing.JPanel;
  * Centers a string of text in the window
  * @author Java, Java, Java, 2E, converted to GUI by mvail
  */
-public class CenterText extends JPanel {
-    /**
-     * displays a text string centered in the window.
-     */
-    public void paintComponent(Graphics g) {
-    	// clears the background
-    	super.paintComponent(g);
-    	
-        String str = "Hello World!";
+@SuppressWarnings("serial")
+public class CenterText extends JPanel
+{
+	/**
+	 * displays a text string centered in the window.
+	 */
+	public void paintComponent(Graphics g)
+	{
+		super.paintComponent(g); // clears the background
+		setBackground(Color.orange);
 
-        g.setFont(new Font("Serif", Font.BOLD, 36));  
-        // Get Font's metrics to allows us to figure out it's size
-        FontMetrics metrics = g.getFontMetrics(); 
-        
-        // Get the frame's size
-        int width = getWidth();
-        int height = getHeight();
-        
-        setBackground(Color.orange);
-        g.setColor(Color.black);
+		// Get the frame's size
+		int width = getWidth();
+		int height = getHeight();
 
-        // calculate center point coordinates to place the string
-        int x = (width - metrics.stringWidth(str))/2; 
-        int y = (height + metrics.getHeight())/2;
+		String str = "Hello World!";
 
-        g.drawString(str, x, y); 
-    }
-   
-	
+		g.setFont(new Font("Serif", Font.BOLD, 36));
+
+		// Get Font's metrics to allows us to figure out it's size
+		FontMetrics metrics = g.getFontMetrics();
+
+		// Use metrics to calculate center point coordinates for the string
+		int x = (width - metrics.stringWidth(str)) / 2;
+		int y = (height + metrics.getHeight()) / 2;
+
+		g.setColor(Color.black);
+		g.drawString(str, x, y);
+	}
+
+
 	/**
 	 * Constructor (panel initialization)
 	 */
@@ -45,18 +45,17 @@ public class CenterText extends JPanel {
 	{
 		setPreferredSize(new Dimension(500, 500));
 	}
-	
-	
+
 	/**
 	 * Starting point for CenterText application.
 	 * @param args unused
 	 */
-	public static void main (String[] args)
+	public static void main(String[] args)
 	{
-		JFrame frame = new JFrame ("CenterText");
-		frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+		JFrame frame = new JFrame("CenterText");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(new CenterText());
 		frame.pack();
 		frame.setVisible(true);
 	}
-} 
+}

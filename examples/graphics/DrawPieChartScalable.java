@@ -5,11 +5,12 @@ import java.awt.Graphics;
 import java.awt.Color;
 
 /**
- * 
- * Programming Project F.7: Draws a scalable pie chart that is centered and changes 
- * size based on the window size. 
+ *
+ * Programming Project F.7: Draws a scalable pie chart that is centered and changes
+ * size based on the window size.
  * @author amit, mvail
 */
+@SuppressWarnings("serial")
 public class DrawPieChartScalable extends JPanel
 {
 	public void paintComponent (Graphics page)
@@ -66,10 +67,10 @@ public class DrawPieChartScalable extends JPanel
 		this.setPreferredSize(new Dimension(150, 150));
 	}
 
-	
+
 	/**
 	 * sets up a JFrame and the DrawPieChartScalable panel
-	 * 
+	 *
 	 * @param args unused
 	 */
 	public static void main(String[] args)

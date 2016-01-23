@@ -5,14 +5,14 @@ import java.awt.Graphics;
 import java.awt.Color;
 
 /**
- * 
+ *
  * Programming Project F.7: Draws a pie chart with eight equal slices, all colored differently.
  * @author amit, mvail
- * 
-*/
+ *
+ */
+@SuppressWarnings("serial")
 public class DrawPieChart extends JPanel
 {
-
 	public void paintComponent (Graphics page)
 	{
 		page.setColor(Color.blue);
@@ -44,17 +44,19 @@ public class DrawPieChart extends JPanel
  	/**
 	 * Constructor (panel initialization)
 	 */
-	public DrawPieChart() {
+	public DrawPieChart()
+	{
 		this.setBackground(Color.white);
 		this.setPreferredSize(new Dimension(150,150));
 	}
-	
-	
+
+
 	/**
  	 * sets up the JFrame and the panel
 	 * @param args unused
  	 */
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		JFrame frame = new JFrame("Pie Chart");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(new DrawPieChart());

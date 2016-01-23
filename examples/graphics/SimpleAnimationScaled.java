@@ -14,7 +14,8 @@ import javax.swing.Timer;
  * @author amit, mvail, marissa
  */
 @SuppressWarnings("serial")
-public class SimpleAnimationScaled extends JPanel {
+public class SimpleAnimationScaled extends JPanel
+{
 	//Note: This area is where you declare constants and variables that
 	//	need to keep their values between calls	to paintComponent().
 	//	Any other variables should be declared locally, in the
@@ -28,33 +29,33 @@ public class SimpleAnimationScaled extends JPanel {
 	private int xOffset = 0;
 	//pixels added to x each time paintComponent() is called
 	private int stepSize = 10;
-	
+
 	/* This method draws on the panel's Graphics context.
 	 * This is where the majority of your work will be.
 	 *
 	 * (non-Javadoc)
 	 * @see java.awt.Container#paint(java.awt.Graphics)
 	 */
-	public void paintComponent(Graphics canvas) 
-	{		
+	public void paintComponent(Graphics canvas)
+	{
 		//account for changes to window size
 		int width = getWidth(); // panel width
 		int height = getHeight(); // panel height
-		
+
 		//Fill the canvas with the background color
 		canvas.setColor(getBackground());
 		canvas.fillRect(0, 0, width, height);
-    	
+
 		//Calculate the new position
 		xOffset = (xOffset + stepSize) % width;
-    	
+
 		//Draw scaled square
 		canvas.setColor(Color.DARK_GRAY);
 		int squareWidth = Math.min(width, height)/5; // square is 1/5th of the screen width or height.
 		int squareX = xOffset; // square edge is always following x offset
 		int squareY = height/2 - squareWidth/2; // square is in the middle of the y axis
 		canvas.fillRect(squareX, squareY, squareWidth, squareWidth);
-		
+
 		//Draw scaled circle on top of square
 		canvas.setColor(Color.RED);
 		int circleDiameter = squareWidth/2; // circle is half as wide as square
@@ -71,7 +72,7 @@ public class SimpleAnimationScaled extends JPanel {
 	 * paint() with frequency specified by the DELAY
 	 * constant.
 	 */
-	public SimpleAnimationScaled() 
+	public SimpleAnimationScaled()
 	{
 		setBackground(Color.white);
 		//Do not initialize larger than 800x600
@@ -79,7 +80,7 @@ public class SimpleAnimationScaled extends JPanel {
 		int initHeight = 400;
 		setPreferredSize(new Dimension(initWidth, initHeight));
 		this.setDoubleBuffered(true);
-		
+
 		//Start the animation - DO NOT REMOVE
 		startAnimation();
 	}
@@ -87,7 +88,7 @@ public class SimpleAnimationScaled extends JPanel {
 	/////////////////////////////////////////////
 	// DO NOT MODIFY main() or startAnimation()
 	/////////////////////////////////////////////
-	
+
 	/**
 	 * Starting point for the TrafficAnimation program
 	 * @param args unused

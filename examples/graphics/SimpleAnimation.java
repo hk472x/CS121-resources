@@ -10,20 +10,21 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /**
-    A simple animation.
-    @author amit, mvail
-*/
+ *   A simple animation.
+ *   @author amit, mvail
+ */
+@SuppressWarnings("serial")
 public class SimpleAnimation extends JPanel
 {
-    private int x, y;
-    private int width, height;
-    private int squareSide = 50;
-    private int stepSize = 10;
-    private final int delay = 33; //milliseconds
+	private int x, y;
+	private int width, height;
+	private int squareSide = 50;
+	private int stepSize = 10;
+	private final int delay = 33; //milliseconds
 
 	/**
 	 * Display the square at a new location.
-	 * 
+	 *
 	 * @param g Graphics context
 	 * @return none
 	 */
@@ -43,15 +44,15 @@ public class SimpleAnimation extends JPanel
 		// Draw new square
 		g.setColor(Color.green);
 		g.fillRect(x, y, squareSide, squareSide);
-		
+
 		//Makes the animation smoother
 		Toolkit.getDefaultToolkit().sync();
 	}
-	
+
 	/**
 	 * Set initial location for square and start the animation.
 	 * This method is only called once when the app starts up.
-	 * 
+	 *
 	 * @param none
 	 * @return void
 	 */
