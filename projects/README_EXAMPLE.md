@@ -4,7 +4,7 @@
 * Class: CS121 Section 2
 * Semester: Spring 2016
 
-## Overview:
+## Overview
 
 This Java application displays an animated marshmallow with features based on
 user input specifying sponginess, color, sugar density, and burn resistance.
