@@ -14,7 +14,7 @@ import javax.swing.JPanel;
  *   @author  amit
  */
 @SuppressWarnings("serial")
-public class DigitalClock extends JPanel
+public class AnimatedDigitalClock extends JPanel
 {
     private final int delay = 1000; //milliseconds
 
@@ -44,7 +44,7 @@ public class DigitalClock extends JPanel
         @param none
         @return void
     */
-    public DigitalClock()
+    public AnimatedDigitalClock()
     {
         setBackground(Color.white);
         setPreferredSize(new Dimension(370,100));

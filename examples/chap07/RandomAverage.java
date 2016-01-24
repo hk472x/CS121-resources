@@ -6,7 +6,7 @@ import java.util.*;
  * @author Amit Jain
  */
 
-public class Average
+public class RandomAverage
 {
 	private static final int MAX = 1000;
 

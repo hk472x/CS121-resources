@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class FavoriteColors
+public class FavoriteColorsWithEnum
 {
 	public enum MyColors {
 		BLUE, GREEN, PURPLE, ORANGE, PINK
