@@ -1,10 +1,10 @@
-# Project X
+# Project X: <Project Name>
 
 * Author: Your Name
 * Class: CS121 Section X
 * Semester: Spring 2016
 
-## Overview:
+## Overview
 
 Concisely explain what the program does. If this exceeds a couple of
 sentences, you're going too far. Generally you should be pulling this
