@@ -47,7 +47,7 @@ public class AnimatedDigitalClock extends JPanel
     public AnimatedDigitalClock()
     {
         setBackground(Color.white);
-        setPreferredSize(new Dimension(370,100));
+        setPreferredSize(new Dimension(400,100));
         startAnimation();
     }
 
@@ -75,7 +75,7 @@ public class AnimatedDigitalClock extends JPanel
     {
         JFrame frame = new JFrame("Digital Clock");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add(new DigitalClock());
+        frame.getContentPane().add(new AnimatedDigitalClock());
         frame.pack();
         frame.setVisible(true);
     }
