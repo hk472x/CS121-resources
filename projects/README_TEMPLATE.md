@@ -1,4 +1,4 @@
-# Project X: <Project Name>
+# Project X: Project Name
 
 * Author: Your Name
 * Class: CS121 Section X
