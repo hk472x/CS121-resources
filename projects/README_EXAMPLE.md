@@ -1,4 +1,4 @@
-# Project 1
+# Project 1: Marshmallow Animation
 
 * Author: Grace Hopper
 * Class: CS121 Section 2
