@@ -3,6 +3,7 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.Toolkit;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -70,6 +71,7 @@ public class TrafficAnimation extends JPanel
 		int squareY = height/2 - squareSide/2;
 		g.setColor(Color.green);
 		g.fillRect(xOffset, squareY, squareSide, squareSide);
+		Toolkit.getDefaultToolkit().sync();
 	}
 
 
