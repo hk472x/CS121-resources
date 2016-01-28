@@ -6,7 +6,7 @@ import java.awt.Color;
 
 /**
  * A starting point for creating a new graphical program
- * @author mvail, amit, marissa
+ * @author CS121 instructors
  */
 @SuppressWarnings("serial")
 public class GraphicsTemplate extends JPanel
