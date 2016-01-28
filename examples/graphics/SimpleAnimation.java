@@ -16,9 +16,7 @@ import javax.swing.JPanel;
 @SuppressWarnings("serial")
 public class SimpleAnimation extends JPanel
 {
-	private int x, y;
-	private int width, height;
-	private int squareSide = 50;
+	private int x;
 	private int stepSize = 10;
 	private final int delay = 33; //milliseconds
 
@@ -30,8 +28,8 @@ public class SimpleAnimation extends JPanel
 	 */
 	public void paintComponent(Graphics g)
 	{
-		width = getWidth();
-		height = getHeight();
+		int width = getWidth();
+		int height = getHeight();
 
 		// Erase the old square
 		g.setColor(getBackground());
@@ -39,7 +37,10 @@ public class SimpleAnimation extends JPanel
 
 		// Move to new position
 		x = (x + stepSize) % width;
-		y = height / 2 - squareSide / 2;
+
+		// Set square width and calculate y offset
+		int squareSide = 50;
+		int y = height / 2 - squareSide / 2;
 
 		// Draw new square
 		g.setColor(Color.green);
