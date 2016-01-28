@@ -62,6 +62,7 @@ public class SimpleAnimationScaled extends JPanel
 		int circleX = squareX + circleDiameter/2; // to center it, we need to offset square's x by the radius of the circle
 		int circleY = squareY - circleDiameter; // we need to move it above the square.
 		canvas.fillOval(circleX, circleY, circleDiameter, circleDiameter);
+		Toolkit.getDefaultToolkit().sync();
 	}
 
 	/**

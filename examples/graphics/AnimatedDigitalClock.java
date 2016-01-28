@@ -8,7 +8,7 @@ import java.util.Calendar;
 import javax.swing.Timer;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
+import java.awt.Toolkit;
 /**
  *   An animated digital clock.
  *   @author  amit
@@ -36,6 +36,7 @@ public class AnimatedDigitalClock extends JPanel
 
         g.setFont (new Font("Arial", Font.BOLD, 64));
         g.drawString(hour + ":" + minute + ":" + second, 60, 60);
+	Toolkit.getDefaultToolkit().sync();
     }
 
 
