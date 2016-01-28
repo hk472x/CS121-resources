@@ -9,7 +9,7 @@ import java.awt.Color;
  * @author CS121 instructors
  */
 @SuppressWarnings("serial")
-public class GraphicsTemplate extends JPanel
+public class BlankCanvas extends JPanel
 {
 	/**
 	 * Draws the picture in the panel. This is where all of your
@@ -24,22 +24,22 @@ public class GraphicsTemplate extends JPanel
 	/**
 	* Constructor (panel initialization)
 	*/
-	public GraphicsTemplate()
+	public BlankCanvas()
 	{
 		this.setBackground(Color.white);
-		this.setPreferredSize(new Dimension(450,175));
+		this.setPreferredSize(new Dimension(800, 600));
 	}
 
 
 	/**
-	* Sets up a JFrame and the GraphicsTemplate panel.
+	* Sets up a JFrame and the BlankCanvas panel.
 	* @param args unused
 	*/
 	public static void main(String[] args)
 	{
-		JFrame frame = new JFrame("GraphicsTemplate");
+		JFrame frame = new JFrame("BlankCanvas");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().add(new GraphicsTemplate());
+		frame.getContentPane().add(new BlankCanvas());
 		frame.pack();
 		frame.setVisible(true);
 	}
