@@ -123,7 +123,7 @@ public class DigitalClock extends JPanel
     public static void main(String[] args) {
         JFrame frame = new JFrame("Digital Clock");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add(new AnimatedDigitalClock());
+        frame.getContentPane().add(new DigitalClock());
         frame.pack();
         frame.setVisible(true);
     }
