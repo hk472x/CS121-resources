@@ -10,6 +10,7 @@ This Java application displays an animated marshmallow with features based on
 user input specifying sponginess, color, sugar density, and burn resistance.
 
 ## Compiling and Using
+
 To compile, execute the following command in the main project directory:
 ```
 $ javac Marshmallow.java
