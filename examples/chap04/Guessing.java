@@ -30,7 +30,6 @@ public class Guessing
       {
     	  System.out.println ("That is not correct, sorry.");
           System.out.println ("The number was " + answer);
-         
       }
       else
       {
