@@ -26,14 +26,14 @@ public class Guessing
 
       guess = scan.nextInt();
 
-      if (guess != answer)
+      if (guess == answer)
       {
-    	  System.out.println ("That is not correct, sorry.");
-          System.out.println ("The number was " + answer);
+         System.out.println ("You got it! Good guessing!");
       }
       else
       {
-    	  System.out.println ("You got it! Good guessing!");
+         System.out.println ("That is not correct, sorry.");
+          System.out.println ("The number was " + answer);
       }
       scan.close();
    }
