@@ -14,11 +14,16 @@ public class SnowmanBigger extends JPanel
    	 */
    	public void paintComponent(Graphics page)
 	{
-		final int MID = 600;
-		final int TOP = 200;
+		int width = getWidth();
+		int height = getHeight();
+	
+		final int MID = width / 2;
+		final int TOP = 100;
+		
+		System.out.println(width);
 
 		page.setColor(Color.CYAN);
-		page.fillRect(0, 0, getWidth(), getHeight());
+		page.fillRect(0, 0, width, height);
 
 		Color groundColor = new Color(127, 0, 64);
 
@@ -26,26 +31,28 @@ public class SnowmanBigger extends JPanel
 		page.fillRect(0, 700, 1200, 200);  // ground
 
 		page.setColor(Color.yellow);
-		page.fillOval(-190, -190, 320, 320); // sun
+		page.fillOval(width-190, -190, 320, 320); // sun
 
 		page.setColor(Color.white);
-		page.fillOval(MID - 80, TOP, 160, 160);      // head
-		page.fillOval(MID - 140, TOP + 140, 280, 200);   // upper torso
-		page.fillOval(MID - 200, TOP + 320, 400, 240);  // lower torso
+		
+		int headWidth = width / 8;
+		int midBodyWidth = headWidth * 2;
+		int lowerBodyWidth = midBodyWidth * 2;
+		page.fillOval(MID - 80, TOP, headWidth, headWidth);      // head
+		page.fillOval(MID - 140, TOP + 140, midBodyWidth, midBodyWidth);   // upper torso
+		page.fillOval(MID - 200, TOP + 320, lowerBodyWidth, lowerBodyWidth);  // lower torso
 
 		page.setColor(Color.black);
 		page.fillOval(MID - 40, TOP + 40, 20, 20);   // left eye
 		page.fillOval(MID + 20, TOP + 40, 20, 20);    // right eye
 
-		page.drawArc(MID - 40, TOP + 80, 80, 40, 190, 160);   // smile
+		page.drawArc(MID - 40, TOP + 80, 80, 40, 0, 160);   // smile
 
 		page.drawLine(MID - 100, TOP + 240, MID - 200, TOP + 160);  // left arm
 		page.drawLine(MID + 100, TOP + 240, MID + 220, TOP + 240);  // right arm
 
 		page.drawLine(MID - 80, TOP + 20, MID + 80, TOP + 20);  // brim of hat
 		page.fillRect(MID - 60, TOP - 80, 120, 100);        // top of hat
-
-		drawGridLines(page, 20);
    	}
 
 	/**
