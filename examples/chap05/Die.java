@@ -1,26 +1,29 @@
 import java.util.Random;
 
 /**
- * Die.java       Java Foundations
+ * Die.java
  *
  * Represents one die (singular of dice) with faces showing values
  * between 1 and 6.
-*/
-
+ *
+ * @author Java Foundations
+ * @author CS121 Instructors (modified a few things from book)
+ */
 public class Die
 {
    private final int MAX = 6;  // maximum face value
    private int faceValue;  // current value showing on the die
-   private Random rand = new Random();
+   private Random rand;
 
    /**
     * Constructor: Sets the initial face value of this die.
     */
    public Die()
    {
+      rand = new Random();
       faceValue = 1;
    }
-   
+
    /**
     * Constructor: Sets the initial face value of this die.
     */
@@ -43,8 +46,8 @@ public class Die
    /**
     * Face value mutator. The face value is not modified if the
     * specified value is not valid.
-    * 
-    * @param value The new face value. Must be between 1 and max face 
+    *
+    * @param value The new face value. Must be between 1 and max face
     * value.
     */
    public void setFaceValue (int value)
@@ -59,7 +62,7 @@ public class Die
     */
    public int getFaceValue()
    {
-	   return faceValue;
+       return faceValue;
    }
 
    /**
