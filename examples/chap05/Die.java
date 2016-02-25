@@ -25,14 +25,6 @@ public class Die
    }
 
    /**
-    * Constructor: Sets the initial face value of this die.
-    */
-   public Die(int sides)
-   {
-      faceValue = 1;
-   }
-
-   /**
     * Computes a new face value for this die and returns the result.
     * @return The new face value.
     */
@@ -52,8 +44,9 @@ public class Die
     */
    public void setFaceValue (int value)
    {
-      if (value > 0 && value <= MAX)
+      if (value > 0 && value <= MAX) {
          faceValue = value;
+      }
    }
 
    /**
@@ -71,7 +64,6 @@ public class Die
    public String toString()
    {
       String result = "Die [faceValue = " + faceValue + "]";
-
       return result;
    }
 }
