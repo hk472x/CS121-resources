@@ -1,5 +1,3 @@
-package basics;
-
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -24,10 +22,10 @@ import javax.swing.event.ListSelectionEvent;
 public class JListDemoPanel extends JPanel
 {
 	private final String[] DEFAULT_NAMES = { "Jane Resnick", "Jim Smith", "Bruce Chow", "Countess Ada" };
-	
+
 	private ArrayList<String> classRoster;
 	private JList<String> nameJList;
-	
+
 	private JLabel statusLine;
 	private JButton addButton;
 
@@ -41,7 +39,7 @@ public class JListDemoPanel extends JPanel
 		initStatusPanel();
 		initControlPanel();
 	}
-	
+
 	/**
 	 * Initializes the name list sub-panel and adds it to the main panel (this).
 	 */
@@ -50,12 +48,12 @@ public class JListDemoPanel extends JPanel
 		// Just a way to add default values to the ArrayList. We are using an ArrayList
 		// because we expect the size of the list to change when users add/remove names.
 		classRoster = new ArrayList<String>(Arrays.asList(DEFAULT_NAMES));
-		
+
 		// Create an empty list and set the font and action listener.
 		nameJList = new JList<String>();
 		nameJList.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 12));
 		nameJList.addListSelectionListener(new NameListListener());
-		
+
 		// Synchronize the data with the data in the ArrayList.
 		syncNameList(); // (this method is implemented below)
 
@@ -67,7 +65,7 @@ public class JListDemoPanel extends JPanel
 		// Add the scroll pane to this panel.
 		this.add(scrollPane);
 	}
-	
+
 	/**
 	 * Initializes the status sub-panel and adds it to the main panel (this).
 	 */
@@ -75,14 +73,14 @@ public class JListDemoPanel extends JPanel
 	{
 		JPanel statusPanel = new JPanel();
 		statusLine = new JLabel("(none)");
-		
+
 		statusPanel.add(new JLabel("Selected Name: "));
 		statusPanel.add(statusLine);
-		
+
 		// Add the status panel to the main panel.
 		this.add(statusPanel);
 	}
-	
+
 	/**
 	 * Initializes the control sub-panel and adds it to the main panel (this).
 	 */
@@ -91,15 +89,15 @@ public class JListDemoPanel extends JPanel
 		JPanel controlPanel = new JPanel();
 		addButton = new JButton("Add Name");
 		addButton.addActionListener(new ButtonListener());
-		
+
 		controlPanel.add(addButton);
-		
+
 		// Add the status panel to the main panel.
 		this.add(controlPanel);
 	}
-	
+
 	/**
-	 * Synchronizes the data JList ("view") with the data in the ArrayList ("model"). 
+	 * Synchronizes the data JList ("view") with the data in the ArrayList ("model").
 	 */
 	private void syncNameList()
 	{
@@ -111,7 +109,7 @@ public class JListDemoPanel extends JPanel
 		// Update the JList with the new array data.
 		nameJList.setListData(nameArray);
 	}
-	
+
 	/**
 	 * Adds the given name to the ArrayList of names and updates the GUI JList
 	 * with the new list of names.
@@ -122,9 +120,9 @@ public class JListDemoPanel extends JPanel
 		classRoster.add(name);
 		syncNameList(); // Make sure we are keeping the GUI list in sync
 	}
-	
+
 	/**
-	 * Handles events from the JList of Strings. 
+	 * Handles events from the JList of Strings.
 	 * Updates the status message when a name is selected in the JList.
 	 */
 	private class NameListListener implements ListSelectionListener
@@ -141,7 +139,7 @@ public class JListDemoPanel extends JPanel
 			}
 		}
 	}
-	
+
 	/**
 	 * Prompts the user for a name when the add user button is pressed. Adds the
 	 * given name to the list of names.
