@@ -16,7 +16,7 @@ public class JListDemo
 		JFrame frame = new JFrame("JList Demo");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(new JListDemoPanel());
-		frame.setPreferredSize(new Dimension(1200, 650));
+		frame.setPreferredSize(new Dimension(500, 400));
 		frame.pack();
 		frame.setVisible(true);
 	}
