@@ -101,13 +101,23 @@ public class JListDemoPanel extends JPanel
 	 */
 	private void syncNameList()
 	{
+		String[] nameArray = getNameArray();
+
+		// Update the JList with the new array data.
+		nameJList.setListData(nameArray);
+	}
+
+	/**
+	 * Converts the ArrayList to an array so we can add it to the JList.
+	 */
+	private String[] getNameArray()
+	{
 		// Copy the contents from the ArrayList to an array.
 		String[] nameArray = new String[classRoster.size()];
 		for(int i = 0; i < nameArray.length; i++){
 			nameArray[i] = classRoster.get(i);
 		}
-		// Update the JList with the new array data.
-		nameJList.setListData(nameArray);
+		return nameArray;
 	}
 
 	/**
