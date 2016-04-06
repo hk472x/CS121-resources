@@ -18,8 +18,8 @@ public class PushCounterPanel extends JPanel
    private static final Color LIGHT_GREEN = new Color(206, 255, 199);
 	 
    private int count;
-   private JButton push;
-   private JLabel label;
+   private JButton pushButton;
+   private JLabel pushCountLabel;
 
    /**
     * Constructor: Sets up the GUI panel
@@ -28,15 +28,15 @@ public class PushCounterPanel extends JPanel
    {
 	  // initialize the components
       count = 0;
-      push = new JButton("Push Me!");
-      label = new JLabel("Pushes: " + count);
+      pushButton = new JButton("Push Me!");
+      pushCountLabel = new JLabel("Pushes: " + count);
       
       // add the action listener (aka. event handler) to the button.
-      push.addActionListener(new ButtonListener());
+      pushButton.addActionListener(new ButtonListener());
 
       // add the button and label to this panel
-      add(push);
-      add(label);
+      add(pushButton);
+      add(pushCountLabel);
 
       // set the background color and preferred size of this panel.
       setBackground(LIGHT_GREEN);
@@ -56,7 +56,7 @@ public class PushCounterPanel extends JPanel
          count++;
          
          // replace the text of the existing label with the new text.
-         label.setText("Pushes: " + count);
+         pushCountLabel.setText("Pushes: " + count);
       }
    }
 }
