@@ -88,25 +88,24 @@ public class JOptionPaneDemoPanel extends JPanel
 		// If they click okay, then we will process the form data. The validation here isn't
 		// very good. We could make sure they didn't enter an empty name. We could keep asking
 		// them for valid input.
-        if (result == JOptionPane.OK_OPTION)
-        {
-        	String name = nameField.getText();
-        	int age = 0;
-        	
-    		try
-        	{
-        		age = Integer.parseInt(ageField.getText());
-        		if(age < 0) {
-        			JOptionPane.showMessageDialog(null, "You can't be a negative age. Silly...");
-        		}
-        	}
-        	catch (NumberFormatException e)
-        	{
-        		JOptionPane.showMessageDialog(null, "Your age needs to be a number. Silly...");
-        	}
-        	
-    		nameLabel.setText(name);
-    		ageLabel.setText(Integer.toString(age));
-        }
+		if (result == JOptionPane.OK_OPTION)
+		{
+			String name = nameField.getText();
+			int age = 0;
+			try
+			{
+				age = Integer.parseInt(ageField.getText());
+				if(age < 0) {
+					JOptionPane.showMessageDialog(null, "You can't be a negative age. Silly...");
+					
+				}
+			}
+			catch (NumberFormatException e)
+			{
+				JOptionPane.showMessageDialog(null, "Your age needs to be a number. Silly...");
+			}
+			nameLabel.setText(name);
+			ageLabel.setText(Integer.toString(age));
+		}
 	}
 }
