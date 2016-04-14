@@ -82,7 +82,7 @@ public class JOptionPaneDemoPanel extends JPanel
 		formInputPanel.add(new JLabel("Age: "));
 		formInputPanel.add(ageField);
 		
-		int result = JOptionPane.showConfirmDialog(null, formInputPanel, "Add Song",
+		int result = JOptionPane.showConfirmDialog(null, formInputPanel, "Add User",
     			JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
 
 		// If they click okay, then we will process the form data. The validation here isn't
