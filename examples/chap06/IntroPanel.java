@@ -9,6 +9,7 @@ import javax.swing.JPanel;
  * 
  * @author Java Foundations
  */
+@SuppressWarnings("serial")
 public class IntroPanel extends JPanel {
 
 	/**

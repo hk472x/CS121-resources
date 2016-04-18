@@ -1,4 +1,5 @@
 import java.awt.*;
+
 import javax.swing.*;
 
 /**
@@ -11,6 +12,7 @@ import javax.swing.*;
  * 
  * @author mvail
  */
+@SuppressWarnings("serial")
 public class GuiPanel extends JPanel {
 	//TODO: Declare any necessary instance variables, here
 	

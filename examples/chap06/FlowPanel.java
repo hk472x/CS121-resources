@@ -10,6 +10,7 @@ import javax.swing.JPanel;
  * 
  * @author Java Foundations
  */
+@SuppressWarnings("serial")
 public class FlowPanel extends JPanel {
 	/**
 	 * Sets up this panel with some buttons to show how flow layout affects

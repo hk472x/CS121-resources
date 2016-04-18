@@ -12,9 +12,8 @@ import javax.swing.*;
 @SuppressWarnings("serial")
 public class CircleMakerDrawPanel extends JPanel
 {
-	public static final Color DEFAULT_FILL_COLOR = Color.blue;
-	public static final Color BIGGEST_FILL_COLOR = Color.red;
-	public static final Color DEFAULT_OUTLINE_COLOR = Color.white;
+	private static final Color DEFAULT_FILL_COLOR = Color.blue;
+	private static final Color BIGGEST_FILL_COLOR = Color.red;
 	
 	private Circle[] circles = new Circle[0];
 	

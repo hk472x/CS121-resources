@@ -13,6 +13,7 @@ import javax.swing.JPanel;
  * 
  * @author Java Foundations
  */
+@SuppressWarnings("serial")
 public class CoordinatesPanel extends JPanel {
 	private final int SIZE = 10; // diameter of dot
 

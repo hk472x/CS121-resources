@@ -110,6 +110,7 @@ public class CircleMaker extends JFrame implements ActionListener
 	/**
 	 * Creates an instance of this class and sets the size and
 	 * visibility of its JFrame.
+	 * @param args 
 	 */
 	public static void main(String args[])
 	{

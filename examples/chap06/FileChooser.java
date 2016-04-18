@@ -2,7 +2,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Scanner;
 
 import javax.swing.JButton;
@@ -76,7 +75,11 @@ public class FileChooser extends JPanel
 		}
 	}
 
-	public static void main(String[] args) throws IOException
+	/**
+	 * Creates and launches the JFrame.
+	 * @param args
+	 */
+	public static void main(String[] args)
 	{
 		JFrame frame = new JFrame("Display File");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

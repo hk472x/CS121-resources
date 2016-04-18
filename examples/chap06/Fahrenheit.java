@@ -1,17 +1,15 @@
 import javax.swing.JFrame;
 
 /**
-  Demonstrates the use of text fields.
-  
-  Fahrenheit.java       
-  @author: Java Foundations
-*/
-
+ * Demonstrates the use of text fields.
+ * @author: Java Foundations
+ */
 public class Fahrenheit
 {
 	/**
-	  Creates and displays the temperature converter GUI.
-	*/
+	 * Creates and displays the temperature converter GUI.
+	 * @param args
+	 */
 	public static void main (String[] args)
 	{
 		JFrame frame = new JFrame ("Fahrenheit");

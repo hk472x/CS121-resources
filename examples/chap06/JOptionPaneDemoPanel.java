@@ -26,6 +26,9 @@ public class JOptionPaneDemoPanel extends JPanel
 	private JLabel nameLabel;
 	private JLabel ageLabel;
 	
+	/**
+	 * Initializes the main panel.
+	 */
 	public JOptionPaneDemoPanel()
 	{
 		// A trick to change font/color for all labels. 
