@@ -17,20 +17,8 @@ public class BlankCanvas extends JPanel
 	 */
 	public void paintComponent (Graphics page)
 	{
-	    final Color PURPLE = new Color(179, 51, 222);
-	    
-	      page.drawLine(0, 0, 800, 600);
-	      
-	      page.setColor(PURPLE);
-	      
-	      page.drawRect(300, 200, 300, 200);
-	      
-	      page.fillOval(300, 200, 300, 200);
-	      
-	      page.setColor(Color.white);
-	      
-	      page.fillArc(350, 250, 200, 100, 180, 180);
-	      
+		// Your code goes below this line.
+
 	}
 
 
