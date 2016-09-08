@@ -16,13 +16,15 @@ public class Snowman extends JPanel
 	{
 		final int MID = 300;
 		final int TOP = 100;
+		final Color GROUND_COLOR = new Color(127, 0, 64);
+		
+		int pageWidth = getWidth();
+		int pageHeight = getHeight();
 
 		page.setColor(Color.CYAN);
-		page.fillRect(0, 0, getWidth(), getHeight());
+		page.fillRect(0, 0, pageWidth, pageHeight);
 
-		Color groundColor = new Color(127, 0, 64);
-
-		page.setColor(groundColor);
+		page.setColor(GROUND_COLOR);
 		page.fillRect(0, 350, 600, 100);  // ground
 
 		page.setColor(Color.yellow);
