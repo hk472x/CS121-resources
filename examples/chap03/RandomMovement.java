@@ -2,7 +2,6 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Dimension;
 import java.awt.Toolkit;
-import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
@@ -20,8 +19,6 @@ import javax.swing.JPanel;
 @SuppressWarnings("serial")
 public class RandomMovement extends JPanel
 {
-	private int x;
-	private int y;
 	private final int delay = 1000; //milliseconds
 	private Random rand = new Random();
 	private ImageIcon icon = new ImageIcon ("unicorn-kitty.jpg");
@@ -35,15 +32,15 @@ public class RandomMovement extends JPanel
 		int width = getWidth();
 		int height = getHeight();
 
-		g.setColor(getBackground());
+		g.setColor(Color.WHITE);
 		g.fillRect(0, 0, width, height);
 
 		// Calculate random x, y coordinates
-		x = rand.nextInt(width - icon.getIconWidth());
-		y = rand.nextInt(height - icon.getIconHeight());
+		int kittyX = rand.nextInt(width - icon.getIconWidth());
+		int kittyY = rand.nextInt(height - icon.getIconHeight());
 
 		// Draw image
-		g.drawImage(icon.getImage(), x, y, null);
+		g.drawImage(icon.getImage(), kittyX, kittyY, null);
 
 		// Make the animation smoother
 		Toolkit.getDefaultToolkit().sync();
@@ -67,12 +64,6 @@ public class RandomMovement extends JPanel
 	 */
 	public RandomMovement()
 	{
-		int initWidth = 400;
-		int initHeight = 400;
-
-		x = 0;
-		y = 0;
-
 		setBackground(Color.white);
 		setPreferredSize(new Dimension(400,400));
 		startAnimation();
