@@ -6,7 +6,8 @@ import java.awt.Color;
 
 /**
  *
- * Programming Project F.7: Draws a pie chart with eight equal slices, all colored differently.
+ * Programming Project F.7: Draws a pie chart with eight equal slices, all
+ * colored differently.
  * @author amit, mvail
  *
  */
@@ -41,7 +42,7 @@ public class DrawPieChart extends JPanel
 	}
 
 
- 	/**
+	/**
 	 * Constructor (panel initialization)
 	 */
 	public DrawPieChart()
@@ -52,9 +53,9 @@ public class DrawPieChart extends JPanel
 
 
 	/**
- 	 * sets up the JFrame and the panel
+	 * sets up the JFrame and the panel
 	 * @param args unused
- 	 */
+	 */
 	public static void main(String[] args)
 	{
 		JFrame frame = new JFrame("Pie Chart");

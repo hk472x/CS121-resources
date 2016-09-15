@@ -9,10 +9,10 @@ import java.awt.*;
 @SuppressWarnings("serial")
 public class Pig extends JPanel
 {
-   	/**
-   	 * @param page object on which drawing takes place
-   	 */
-   	public void paintComponent(Graphics page)
+	/**
+	 * @param page object on which drawing takes place
+	 */
+	public void paintComponent(Graphics page)
 	{
 		int width = getWidth();
 		int height = getHeight();
@@ -67,7 +67,7 @@ public class Pig extends JPanel
 		page.drawArc(xOffset + 280, 80, 80, 80, 200, 35);   // smile
 
 		page.drawString("Oink, oink!", xOffset + 340, 140);
-   	}
+	}
 
 
 	/**

@@ -9,7 +9,7 @@ import javax.swing.ImageIcon;
 /**
  * Demonstrates the use of image icons.
  * 
- * @author marissa
+ * @author CS121 Instructors
  */
 @SuppressWarnings("serial")
 public class ImageAvatar extends JPanel

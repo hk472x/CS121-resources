@@ -1,5 +1,6 @@
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Color;
@@ -8,6 +9,7 @@ import java.awt.Color;
  * A starting point for creating a new graphical program
  * @author CS121 instructors
  */
+@SuppressWarnings("serial")
 public class BlankCanvas extends JPanel
 {
 	/**
@@ -23,8 +25,8 @@ public class BlankCanvas extends JPanel
 
 
 	/**
-	* Constructor (panel initialization)
-	*/
+	 * Constructor (panel initialization)
+	 */
 	public BlankCanvas()
 	{
 		this.setBackground(Color.white);
@@ -33,9 +35,9 @@ public class BlankCanvas extends JPanel
 
 
 	/**
-	* Sets up a JFrame and the BlankCanvas panel.
-	* @param args unused
-	*/
+	 * Sets up a JFrame and the BlankCanvas panel.
+	 * @param args unused
+	 */
 	public static void main(String[] args)
 	{
 		JFrame frame = new JFrame("BlankCanvas");

@@ -16,68 +16,68 @@ import java.awt.Toolkit;
 @SuppressWarnings("serial")
 public class AnimatedDigitalClock extends JPanel
 {
-    private final int delay = 1000; //milliseconds
+	private final int delay = 1000; //milliseconds
 
-    /**
-     *   Display the digital time.
-     *   @param g Graphics context
-     *   @return none
-     */
-    public void paintComponent(Graphics g)
-    {
-        g.setColor(Color.black);
-        g.fillRect(0, 0, getWidth(), getHeight());
-        g.setColor(Color.green);
+	/**
+	 *   Display the digital time.
+	 *   @param g Graphics context
+	 *   @return none
+	 */
+	public void paintComponent(Graphics canvas)
+	{
+		canvas.setColor(Color.black);
+		canvas.fillRect(0, 0, getWidth(), getHeight());
+		canvas.setColor(Color.green);
 
-        Calendar rightNow = Calendar.getInstance();
-        int hour = rightNow.get(Calendar.HOUR_OF_DAY);
-        int minute = rightNow.get(Calendar.MINUTE);
-        int second = rightNow.get(Calendar.SECOND);
+		Calendar rightNow = Calendar.getInstance();
+		int hour = rightNow.get(Calendar.HOUR_OF_DAY);
+		int minute = rightNow.get(Calendar.MINUTE);
+		int second = rightNow.get(Calendar.SECOND);
 
-        g.setFont (new Font("Arial", Font.BOLD, 64));
-        g.drawString(hour + ":" + minute + ":" + second, 60, 60);
-	Toolkit.getDefaultToolkit().sync();
-    }
-
-
-    /**
-        Set background color and preferred size and start animation.
-        @param none
-        @return void
-    */
-    public AnimatedDigitalClock()
-    {
-        setBackground(Color.white);
-        setPreferredSize(new Dimension(400,100));
-        startAnimation();
-    }
+		canvas.setFont (new Font("Arial", Font.BOLD, 64));
+		canvas.drawString(hour + ":" + minute + ":" + second, 60, 60);
+		Toolkit.getDefaultToolkit().sync();
+	}
 
 
-    /**
-     * Create an animation thread that runs once per second
-     */
-    private void startAnimation()
-    {
-        ActionListener taskPerformer = new ActionListener() {
-            public void actionPerformed(ActionEvent evt)
-            {
-                repaint();
-            }
-        };
-        new Timer(delay, taskPerformer).start();
-    }
+	/**
+	  Set background color and preferred size and start animation.
+	  @param none
+	  @return void
+	  */
+	public AnimatedDigitalClock()
+	{
+		setBackground(Color.white);
+		setPreferredSize(new Dimension(400,100));
+		startAnimation();
+	}
 
 
-    /**
-     * sets up a JFrame and the DigitalClock panel
-     * @param args unused
-     */
-    public static void main(String[] args)
-    {
-        JFrame frame = new JFrame("Digital Clock");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add(new AnimatedDigitalClock());
-        frame.pack();
-        frame.setVisible(true);
-    }
+	/**
+	 * Create an animation thread that runs once per second
+	 */
+	private void startAnimation()
+	{
+		ActionListener taskPerformer = new ActionListener() {
+			public void actionPerformed(ActionEvent evt)
+			{
+				repaint();
+			}
+		};
+		new Timer(delay, taskPerformer).start();
+	}
+
+
+	/**
+	 * sets up a JFrame and the DigitalClock panel
+	 * @param args unused
+	 */
+	public static void main(String[] args)
+	{
+		JFrame frame = new JFrame("Digital Clock");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().add(new AnimatedDigitalClock());
+		frame.pack();
+		frame.setVisible(true);
+	}
 }

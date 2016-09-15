@@ -13,9 +13,9 @@ public class CenterText extends JPanel
 	/**
 	 * displays a text string centered in the window.
 	 */
-	public void paintComponent(Graphics g)
+	public void paintComponent(Graphics canvas)
 	{
-		super.paintComponent(g); // clears the background
+		super.paintComponent(canvas); // clears the background
 		setBackground(Color.orange);
 
 		// Get the frame's size
@@ -24,17 +24,17 @@ public class CenterText extends JPanel
 
 		String str = "Hello World!";
 
-		g.setFont(new Font("Serif", Font.BOLD, 36));
+		canvas.setFont(new Font("Serif", Font.BOLD, 36));
 
 		// Get Font's metrics to allows us to figure out it's size
-		FontMetrics metrics = g.getFontMetrics();
+		FontMetrics metrics = canvas.getFontMetrics();
 
 		// Use metrics to calculate center point coordinates for the string
 		int x = (width - metrics.stringWidth(str)) / 2;
 		int y = (height + metrics.getHeight()) / 2;
 
-		g.setColor(Color.black);
-		g.drawString(str, x, y);
+		canvas.setColor(Color.black);
+		canvas.drawString(str, x, y);
 	}
 
 
