@@ -9,7 +9,7 @@ import java.awt.Color;
  * Programming Project F.7: Draws a scalable pie chart that is centered and changes
  * size based on the window size.
  * @author amit, mvail
-*/
+ */
 @SuppressWarnings("serial")
 public class DrawPieChartScalable extends JPanel
 {
