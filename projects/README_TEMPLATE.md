@@ -20,14 +20,28 @@ about it to use it as quickly as possible?
 
 ## Discussion
 
-Discuss the issues you encountered during programming (development)
-and testing. What problems did you have? What did you have to
-research and learn on your own? What kinds of errors did you get? How
-did you fix them?
+Discuss the issues and successes you encountered during programming
+(development). Here are some questions to get you started. You don't
+have to answer all of them in order - they are a guideline to get you
+thinking.
+  * What problems did you have? What went well?
+  * What process did you go through to create the program?
+  * What did you have to research and learn on your own?
+  * What kinds of errors did you get? How did you fix them?
+  * What parts of the project did you find challenging?
+  * Is there anything that finally "clicked" for you in the process 
+  of working on this project?
+  * Is there anything that you would change about the project?
+  * Can you apply what you learned in this project to future projects?
 
-What parts of the project did you find challenging? Is there anything
-that finally "clicked" for you in the process of working on this
-project?
+## Testing
+
+In this section, tell us how you tested your project.
+
+You are expected to test your projects before submitting them for
+final review. Pretend that your instructor is your manager or 
+customer at work. How would you ensure that you are delivering a 
+working solution to their requirements?
 
 ## Extra Credit
 
