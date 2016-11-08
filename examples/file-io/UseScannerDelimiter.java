@@ -33,13 +33,13 @@ public class UseScannerDelimiter {
 	{
 		Scanner scan = new Scanner(text);
 
-        int count = 0;
+		int count = 0;
 
 		String word;
 		while (scan.hasNext()) {
 			word = scan.next();
 			System.out.println("\t" + word);
-            count ++;
+			count ++;
 		}
 
 		System.out.println( "The string has " + count + " words");
@@ -60,7 +60,7 @@ public class UseScannerDelimiter {
 		while (scan.hasNext()) {
 			word = scan.next();
 			System.out.println("\t" + word);
-            count++;
+			count++;
 		}
 
 		System.out.println( "The string has " + count + " words");
