@@ -1,4 +1,3 @@
-import java.awt.Color;
 import java.awt.Dimension;
 
 import javax.swing.JLabel;
@@ -17,11 +16,8 @@ public class IntroPanel extends JPanel {
 	 */
 	public IntroPanel()
 	{
-		
 		setPreferredSize(new Dimension(400, 400));
-		Color lightGreen = new Color(206, 255, 199);
-		setBackground(lightGreen);
-
+		
 		JLabel l1 = new JLabel("Layout Manager Demonstration");
 		JLabel l2 = new JLabel("Choose a tab to see an example of "
 				+ "a layout manager.");

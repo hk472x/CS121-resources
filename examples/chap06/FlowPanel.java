@@ -1,4 +1,3 @@
-import java.awt.Color;
 import java.awt.FlowLayout;
 
 import javax.swing.JButton;
@@ -19,8 +18,6 @@ public class FlowPanel extends JPanel {
 	public FlowPanel()
 	{
 		setLayout(new FlowLayout());
-		Color lightGreen = new Color(206, 255, 199);
-		setBackground(lightGreen);
 
 		JButton b1 = new JButton("BUTTON 1");
 		JButton b2 = new JButton("BUTTON 2");

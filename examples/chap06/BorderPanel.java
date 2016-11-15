@@ -18,13 +18,11 @@ public class BorderPanel extends JPanel
 	   setLayout(new BorderLayout());
 	  //setLayout(new BorderLayout(10, 10));
 
-      setBackground(Color.green);
-
-      JButton b1 = new JButton("BUTTON 1");
-      JButton b2 = new JButton("BUTTON 2");
-      JButton b3 = new JButton("BUTTON 3");
-      JButton b4 = new JButton("BUTTON 4");
-      JButton b5 = new JButton("BUTTON 5");
+      JButton b1 = new JButton("CENTER");
+      JButton b2 = new JButton("NORTH");
+      JButton b3 = new JButton("SOUTH");
+      JButton b4 = new JButton("EAST");
+      JButton b5 = new JButton("WEST");
 
       add(b1, BorderLayout.CENTER);
       add(b2, BorderLayout.NORTH);

@@ -5,6 +5,7 @@ import javax.swing.JTabbedPane;
  * Demonstrates the use of flow, border, grid, and box layouts
  * 
  * @author Java Foundations
+ * @author CS121 Instructors
  *
  */
 public class LayoutDemo {
@@ -24,8 +25,10 @@ public class LayoutDemo {
 		tp.addTab("Flow", new FlowPanel());
 		tp.addTab("Border", new BorderPanel());
 		tp.addTab("Grid", new GridPanel());
-		tp.addTab("Box", new BoxPanel());
-
+		tp.addTab("Box X", new BoxPanelXAxis());
+		tp.addTab("Box Y", new BoxPanelYAxis());
+		tp.addTab("Complex", new ComplexPanel());
+		
 		frame.getContentPane().add(tp);
 
 		frame.pack();

@@ -1,4 +1,3 @@
-import java.awt.Color;
 import java.awt.Font;
 import java.awt.GridLayout;
 
@@ -10,12 +9,11 @@ import javax.swing.JPanel;
  * layout manager.
  * 
  * @author Java Foundations
+ * @author CS121 Instructors
  */
 @SuppressWarnings("serial")
 public class GridPanel extends JPanel
 {
-	private final Color LIGHT_GREEN = new Color(206, 255, 199);
-	
 	/**
 	 * Sets up this panel with some buttons to show how grid layout affects
 	 * their position, shape, and size.
@@ -23,7 +21,6 @@ public class GridPanel extends JPanel
 	public GridPanel()
 	{
 		setLayout(new GridLayout(2, 3));		
-		setBackground(LIGHT_GREEN);
 
 		JButton[] buttons = new JButton[5];
 		

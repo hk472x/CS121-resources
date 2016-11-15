@@ -1,4 +1,3 @@
-import java.awt.Color;
 import java.awt.Dimension;
 
 import javax.swing.Box;
@@ -11,20 +10,18 @@ import javax.swing.JPanel;
  * layout manager.
  * 
  * @author Java Foundations
+ * @author CS121 Instructors
  */
 @SuppressWarnings("serial")
-public class BoxPanel extends JPanel
+public class BoxPanelYAxis extends JPanel
 {
 	/**
 	 * Sets up this panel with some buttons to show how a vertical box layout
 	 * (and invisible components) affects their position.
 	 */
-	public BoxPanel()
+	public BoxPanelYAxis()
 	{
-		setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
-
-		Color lightGreen = new Color(206, 255, 199);
-		setBackground(lightGreen);
+		setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
 		JButton b1 = new JButton("BUTTON 1");
 		JButton b2 = new JButton("BUTTON 2");
@@ -35,7 +32,7 @@ public class BoxPanel extends JPanel
 		add(b1);
 		add(Box.createRigidArea(new Dimension(20, 0)));
 		add(b2);
-		add(Box.createHorizontalGlue());
+		add(Box.createVerticalGlue());
 		add(b3);
 		add(Box.createVerticalGlue());
 		add(b4);
