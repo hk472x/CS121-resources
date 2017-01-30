@@ -67,10 +67,16 @@ public class TrafficAnimation extends JPanel
 		// at their new positions on the screen
 
 		// This draws a green square. Replace it with your own object.
-		int squareSide = height/5;
-		int squareY = height/2 - squareSide/2;
+		int squareSide = height / 5;
+		int squareY = height / 2 - squareSide / 2;
+		
 		g.setColor(Color.green);
 		g.fillRect(xOffset, squareY, squareSide, squareSide);
+		
+		
+		
+		
+		// Put your code above this line. This makes the drawing smoother.
 		Toolkit.getDefaultToolkit().sync();
 	}
 
