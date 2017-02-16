@@ -31,7 +31,7 @@ public class ToleranceForPi {
 		}
 
 		if (decentDifference < TOLERANCE15) {
-			System.out.println(DECENT_PI + " is the best Pi!");
+			System.out.println(DECENT_PI + " is great Pi!");
 		} else if (decentDifference < TOLERANCE5) {
 			System.out.println(DECENT_PI + " is decent Pi.");
 		} else if (decentDifference < TOLERANCE2) {
@@ -41,7 +41,7 @@ public class ToleranceForPi {
 		}
 		
 		if (badDifference < TOLERANCE15) {
-			System.out.println(BAD_PI + " is the best Pi!");
+			System.out.println(BAD_PI + " is great Pi!");
 		} else if (badDifference < TOLERANCE5) {
 			System.out.println(BAD_PI + " is decent Pi.");
 		} else if (badDifference < TOLERANCE2) {
@@ -51,7 +51,7 @@ public class ToleranceForPi {
 		}
 
 		if (awfulDifference < TOLERANCE15) {
-			System.out.println(AWFUL_PI + " is the best Pi!");
+			System.out.println(AWFUL_PI + " is great Pi!");
 		} else if (awfulDifference < TOLERANCE5) {
 			System.out.println(AWFUL_PI + " is decent Pi.");
 		} else if (awfulDifference < TOLERANCE2) {
