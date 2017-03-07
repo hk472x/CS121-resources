@@ -23,7 +23,7 @@ public class PhotoAlbumManager
 		Scanner scan = new Scanner(System.in);
 
 		System.out.println("===========================");
-		System.out.println("Welcome to the super jukebox!");
+		System.out.println("Welcome!");
 		System.out.println("===========================");
 
 		PhotoAlbum album = null;
