@@ -68,11 +68,6 @@ public class FontScalerPanel extends JPanel {
 		Font mediumFont = new Font("Helvitica", Font.PLAIN, mediumFontPointSize);
 		Font largeFont = new Font("Helvitica", Font.PLAIN, largeFontPointSize);
 		
-//		unscaledFontLabelLabel.setFont(mediumFont);
-//		smallFontLabelLabel.setFont(mediumFont);
-//		mediumFontLabelLabel.setFont(mediumFont);
-//		largeFontLabelLabel.setFont(mediumFont);
-		
 		//unscaledFontLabel.setFont(); //don't change
 		smallFontLabel.setFont(smallFont);
 		mediumFontLabel.setFont(mediumFont);
