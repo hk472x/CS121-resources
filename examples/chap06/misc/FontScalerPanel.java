@@ -26,10 +26,9 @@ public class FontScalerPanel extends JPanel {
 	private JLabel smallFontLabel;
 	private JLabel mediumFontLabel;
 	private JLabel largeFontLabel;
-	private Dimension screenDim;
 	
 	public FontScalerPanel() {
-		screenDim = Toolkit.getDefaultToolkit().getScreenSize();
+		Dimension screenDim = Toolkit.getDefaultToolkit().getScreenSize();
 		
 		String quote = new String("Size matters not. Judge me by my size, do you?");
 		unscaledFontLabel = new JLabel(quote);
