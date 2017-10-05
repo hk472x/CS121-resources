@@ -12,13 +12,14 @@ public class Stars
 	public static void main (String[] args)
 	{
 		final int MAX_ROWS = 10;
+		int spacing; 
 
-		for(int row = MAX_ROWS; row > 0; row--)
+		for(int row = 1; row <= MAX_ROWS ; row++)
 		{
-			for(int star = 0; star < row; star++)
-			{
+			for (spacnig = 1; space <= MAX_ROWS - row; spacing++)
+				System.out.println(" ");
+			for(int star = spacing; star <= MAX_ROWS; star++)
 				System.out.print ("*");
-			}
 			System.out.println();
 		}
 	}
